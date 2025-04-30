@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wall Visualization</title>
+    <link rel="stylesheet" href="AparnaKumari_WallVisualization.css" />
+  </head>
+
+  <body>
+    <h1>Wall Visualization</h1>
+    <div>
+      <label for="numWalls">Number of Walls:</label>
+      <input type="number" id="numWalls" min="1" />
+
+      <label for="heights">Heights of Walls separated by #:</label>
+      <input type="text" id="heights" placeholder="(e.g., 3#5#2#6)" />
+
+      <button onclick="drawWalls()">Draw Walls</button>
+    </div>
+    <p id="error"></p>
+
+    <div class="main-display">
+      <img id="leftStickman" src="https://upload.wikimedia.org/wikipedia/commons/3/35/Basic_human_drawing.png" alt="Left Stickman" />
+
+      <div id="wall-container"></div>
+
+      <img id="rightStickman" src="https://upload.wikimedia.org/wikipedia/commons/3/35/Basic_human_drawing.png" alt="Right Stickman" />
+    </div>
+
+    <div class="results" id="results"></div>
+
+    <script src="AparnaKumari_WallVisualization.js"></script>
+  </body>
+</html>
